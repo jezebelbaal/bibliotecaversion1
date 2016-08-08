@@ -50,8 +50,7 @@ public class BookCollectionTest {
     public void testsIfOnlyAvailableBooksAreListed() throws Exception{
 
         BookCollection collection = new BookCollection(books);
-        collection.books.get(0).available = false;
-
-        //assertEquals();collection.getAvailable()
+        collection.books.get(0).setUnavailable();
+        assertEquals(collection.books.get(0).available, false);
     }
 }

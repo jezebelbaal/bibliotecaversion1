@@ -14,6 +14,14 @@ public class Book {
         this.title = title;
         this.author = author;
         this.year = year;
+        this.available = available;
+    }
+
+    public void setAvailable(){
+        this.available = false;
+    }
+
+    public void setUnavailable(){
         this.available = true;
     }
 }

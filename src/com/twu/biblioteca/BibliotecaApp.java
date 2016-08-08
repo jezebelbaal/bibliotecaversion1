@@ -1,12 +1,14 @@
-package com.twu.biblioteca;
+//package com.twu.biblioteca;
 
 public class BibliotecaApp {
 
     public static void main(String[] args) {
 
-        MessageWriter messages = new MessageWriter();
+        MessagePrinter messages = new MessagePrinter();
+        Menu menu = new Menu();
         messages.welcome();
 
+        menu.showOptions();
     }
 
 }

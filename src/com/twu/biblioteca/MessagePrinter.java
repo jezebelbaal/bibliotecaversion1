@@ -1,9 +1,9 @@
-package com.twu.biblioteca;
+//package com.twu.biblioteca;
 
 /**
  * Created by jutsch on 8/8/16.
  */
-public class MessageWriter {
+public class MessagePrinter {
 
     public String welcome = "Welcome to Biblioteca 1.0!";
     public String end = "You are logged out of Biblioteca.";

@@ -1,4 +1,4 @@
-package com.twu.biblioteca;
+//package com.twu.biblioteca;
 
 import java.util.ArrayList;
 
@@ -26,5 +26,14 @@ public class Menu {
         bookOptions.add(checkoutBook);
         bookOptions.add(returnBook);
 
+    }
+
+    public void showOptions(){
+
+        for(int i = 0; i<defaultOptions.size(); i++){
+
+            MenuOption option = defaultOptions.get(i);
+            System.out.println("Press® " + String.valueOf(option.id) + ": " + option.label);
+        }
     }
 }

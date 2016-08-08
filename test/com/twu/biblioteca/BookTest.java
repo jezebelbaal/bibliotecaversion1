@@ -8,10 +8,16 @@ import static org.junit.Assert.*;
  */
 public class BookTest {
 
+    Book book = new Book("Frankenstein", "Mary Shelley", 1831, true);
+
     @Test
     public void assertsFrankieBookTitleisSetObject() throws Exception{
-        Book book = new Book("Frankenstein", "Mary Shelley", 1831, true);
         assertEquals(book.title, "Frankenstein");
     }
 
+    public void setUnavailableBook() throws Exception{
+
+        book.setUnavailable();
+        assertEquals(book.available, false);
+    }
 }
