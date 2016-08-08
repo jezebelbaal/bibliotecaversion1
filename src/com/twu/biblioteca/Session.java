@@ -7,4 +7,7 @@ public class Session {
 
     public boolean status;
 
+    public void quit(){
+        status = false;
+    }
 }
