@@ -9,17 +9,9 @@ public class BookCollection {
 
     public ArrayList<Book> books =  new ArrayList<Book>();
 
-    public BookCollection() {
+    public BookCollection(ArrayList<Book> books) {
 
-        Book frankenstein = new Book("Frankenstein", "Mary Shelley", 1831, true);
-        Book antiOedipus = new Book ("The Anti Oedipus", "Gilles Deleuze", 1972, true);
-        Book lostIllusions = new Book ("Lost Illusions", "Balzac", 1893, true);
-        Book jockey = new Book ("Jockey", "Matilde Campilho", 2015, true);
-
-        books.add(frankenstein);
-        books.add(antiOedipus);
-        books.add(lostIllusions);
-        books.add(jockey);
+        this.books = books;
     }
 
     public ArrayList getAvailable(){
