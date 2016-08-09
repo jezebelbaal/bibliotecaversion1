@@ -51,6 +51,8 @@ public class BookCollectionTest {
 
         BookCollection collection = new BookCollection(books);
         collection.books.get(0).setUnavailable();
-        assertEquals(collection.books.get(0).available, false);
+        ArrayList availableCollection = collection.getAvailable();
+
+        assertEquals(availableCollection.size(), 3);
     }
 }

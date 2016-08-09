@@ -22,7 +22,7 @@ public class BookCollection {
                 availableBooks.add(books.get(i));
             }
         }
-        return books;
+        return availableBooks;
     }
 
 

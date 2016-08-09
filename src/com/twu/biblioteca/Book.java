@@ -18,10 +18,11 @@ public class Book {
     }
 
     public void setAvailable(){
-        this.available = false;
+        this.available = true;
     }
 
     public void setUnavailable(){
-        this.available = true;
+
+        this.available = false;
     }
 }

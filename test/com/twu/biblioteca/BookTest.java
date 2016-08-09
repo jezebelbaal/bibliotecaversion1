@@ -15,6 +15,7 @@ public class BookTest {
         assertEquals(book.title, "Frankenstein");
     }
 
+    @Test
     public void setUnavailableBook() throws Exception{
 
         book.setUnavailable();

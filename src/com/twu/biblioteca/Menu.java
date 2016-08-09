@@ -33,7 +33,9 @@ public class Menu {
         for(int i = 0; i<defaultOptions.size(); i++){
 
             MenuOption option = defaultOptions.get(i);
-            System.out.println("Press® " + String.valueOf(option.id) + ": " + option.label);
+            System.out.println("Press " + String.valueOf(option.id) + ": " + option.label);
         }
     }
+
+
 }
