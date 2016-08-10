@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
  */
 public class BookTest {
 
-    Book book = new Book("Frankenstein", "Mary Shelley", 1831, true);
+    Book book = new Book("Frankenstein", "Mary Shelley", 1831, true, 0);
 
     @Test
     public void assertsFrankieBookTitleisSetObject() throws Exception{

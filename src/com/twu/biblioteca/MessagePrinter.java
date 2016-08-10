@@ -1,4 +1,6 @@
-//package com.twu.biblioteca;
+package com.twu.biblioteca;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by jutsch on 8/8/16.
@@ -8,10 +10,10 @@ public class MessagePrinter {
     public String welcome = "Welcome to Biblioteca 1.0!";
     public String end = "You are logged out of Biblioteca.";
     public String invalidEntry = "Invalid Entry! Please, try again.";
-    public String successfulCheckout = "";
-    public String unsuccessfulCheckout = "";
-    public String successfulReturn = "";
-    public String unsuccessfulReturn = "";
+    public String successfulCheckout = "Successful Checkout!";
+    public String unsuccessfulCheckout = "Error on checking out.";
+    public String successfulReturn = "Successful Return!";
+    public String unsuccessfulReturn = "Error on returning.";
 
 
     public void welcome(){
@@ -40,6 +42,22 @@ public class MessagePrinter {
 
     public void unsuccessfulReturn(){
         System.out.println(this.unsuccessfulReturn);
+    }
+
+    public void printAvailableBooks(ArrayList<Book> books){
+
+        System.out.println("Available Books\n");
+        Iterator <Book> iterator = books.iterator();
+        while(iterator.hasNext()){
+
+            Book book = iterator.next();
+            System.out.println("Id code: " + book.id);
+            System.out.println("Title: " + book.title);
+            System.out.println("Author: " + book.author);
+            System.out.println("Year: " + String.valueOf(book.year));
+            System.out.println("\n ============ \n");
+        }
+
     }
 
 }

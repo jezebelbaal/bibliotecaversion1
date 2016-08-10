@@ -1,12 +1,11 @@
-//package com.twu.biblioteca;
-import java.util.Scanner;
+package com.twu.biblioteca;
 
 public class BibliotecaApp {
 
     public static void main(String[] args) {
 
-        Session session = new Session();
-        session.run();
+        Controller controller = new Controller();
+        controller.run();
     }
 
 }

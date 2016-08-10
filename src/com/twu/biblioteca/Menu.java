@@ -1,4 +1,4 @@
-//package com.twu.biblioteca;
+package com.twu.biblioteca;
 
 import java.util.ArrayList;
 
@@ -12,19 +12,15 @@ public class Menu {
 
     public Menu() {
 
-        MenuOption availableBooks = new MenuOption(0, "Listing all available books");
-        MenuOption quit = new MenuOption(1, "Quit");
+        MenuOption quit = new MenuOption(0, "Quit");
+        MenuOption availableBooks = new MenuOption(1, "Listing all available books");
+        MenuOption checkoutBook = new MenuOption(2, "Checkout available book");
+        MenuOption returnBook = new MenuOption(3, "Return book");
 
-        defaultOptions.add(availableBooks);
         defaultOptions.add(quit);
-
-        MenuOption detailsBook = new MenuOption(0, "See details");
-        MenuOption checkoutBook = new MenuOption(1, "Checkout available book");
-        MenuOption returnBook = new MenuOption(2, "Return book");
-
-        bookOptions.add(detailsBook);
-        bookOptions.add(checkoutBook);
-        bookOptions.add(returnBook);
+        defaultOptions.add(availableBooks);
+        defaultOptions.add(checkoutBook);
+        defaultOptions.add(returnBook);
 
     }
 
