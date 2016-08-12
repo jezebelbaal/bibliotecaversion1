@@ -12,7 +12,6 @@ public class MenuOption {
     public MenuOption(int id, String label) {
         this.id = id;
         this.label = label;
-        //this.redirectFunction = redirectFunction;
     }
 
 }

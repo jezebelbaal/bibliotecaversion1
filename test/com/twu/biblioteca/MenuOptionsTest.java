@@ -15,11 +15,4 @@ public class MenuOptionsTest {
         Menu menu = new Menu();
         assertTrue(menu.defaultOptions.size()>0);
     }
-
-    @Test
-    public void testsIfIsThereABooksMenuOptionsList() throws Exception{
-
-        Menu menu = new Menu();
-        assertTrue(menu.bookOptions.size()>0);
-    }
 }

@@ -8,17 +8,18 @@ import static org.junit.Assert.*;
  */
 public class BookTest {
 
-    Book book = new Book("Frankenstein", "Mary Shelley", 1831, true, 0);
+    Book book = new Book("Frankenstein", "Mary Shelley", 1831, 0);
+    User user = new User("78923-234", "p@ssw0rd!", "Jullie", "jutsch@thoughtworks.com", "991084388");
 
     @Test
     public void assertsFrankieBookTitleisSetObject() throws Exception{
-        assertEquals(book.title, "Frankenstein");
+        assertEquals(book.getTitle(), "Frankenstein");
     }
 
     @Test
     public void setUnavailableBook() throws Exception{
 
-        book.setUnavailable();
-        assertEquals(book.available, false);
+        book.setRentUser(user);
+        assertEquals(book.isAvailable(), false);
     }
 }

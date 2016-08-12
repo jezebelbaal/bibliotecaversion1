@@ -3,29 +3,48 @@ package com.twu.biblioteca;
 /**
  * Created by jutsch on 8/8/16.
  */
-public class Book {
+public class Book extends Media {
 
-    public String title;
-    public String author;
-    public boolean available;
-    public int year;
-    public int id;
+    private String author;
 
-    public Book(String title, String author, int year, boolean available, int id) {
+    public Book(String title, String author, int year, int id) {
 
-        this.title = title;
+        setTitle(title);
+        setAuthor(author);
+        setYear(year);
+
+        setId(id);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Book book = (Book) o;
+
+
+        if (getYear() != book.getYear()) return false;
+        if (getId() != book.getId()) return false;
+        if (!getTitle().equals(book.getTitle())) return false;
+        return author.equals(book.getAuthor());
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getTitle().hashCode();
+        result = 31 * result + getAuthor().hashCode();
+        result = 31 * result + getYear();
+        result = 31 * result + getId();
+        return result;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
         this.author = author;
-        this.year = year;
-        this.available = available;
-        this.id = id;
-    }
-
-    public void setAvailable(){
-        this.available = true;
-    }
-
-    public void setUnavailable(){
-
-        this.available = false;
     }
 }

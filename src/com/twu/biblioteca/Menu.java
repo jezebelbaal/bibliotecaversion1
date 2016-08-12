@@ -14,11 +14,15 @@ public class Menu {
 
         MenuOption quit = new MenuOption(0, "Quit");
         MenuOption availableBooks = new MenuOption(1, "Listing all available books");
-        MenuOption checkoutBook = new MenuOption(2, "Checkout available book");
-        MenuOption returnBook = new MenuOption(3, "Return book");
+        MenuOption availableMovies = new MenuOption(2, "Listing all available movies");
+        MenuOption checkoutBook = new MenuOption(3, "Checkout available book");
+        MenuOption returnBook = new MenuOption(4, "Return book");
+        MenuOption checkoutMovie = new MenuOption(5, "Checkout movie");
+        MenuOption returnMovie = new MenuOption(6, "Return movie");
 
         defaultOptions.add(quit);
         defaultOptions.add(availableBooks);
+        defaultOptions.add(availableMovies);
         defaultOptions.add(checkoutBook);
         defaultOptions.add(returnBook);
 
